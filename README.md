@@ -217,8 +217,8 @@ VirusTotal is a platform that allows users to investigate whether an IP address 
 <br />
 <img width="1114" height="582" alt="Image" src="https://github.com/user-attachments/assets/fc3f46c9-d77a-41cf-a498-9bbea711ff48" />
 
-<br >/
-<br >/
+<br />
+<br />
 
 In the last 24 hours, I was able to locate a few attackers attempting to login inside my VM.
 
