@@ -39,7 +39,7 @@ My project involved deploying a single intentionally vulnerable virtual machine 
 
 In cybersecurity, a honeypot refers to a decoy system or network that is implemented to engage and observe attackers. Its purpose is to divert attention from actual systems and collect information about attack techniques and tools.
 
-<b>Step 1: Create a resource group<b/>
+<b><u>Step 1: Create a resource group<u/><b/>
 
 Begin by navigating to https://portal.azure.com/ . In the search bar, enter "Resource Group" to locate the relevant section.
 
@@ -52,7 +52,7 @@ Begin by navigating to https://portal.azure.com/ . In the search bar, enter "Res
  
 Once you have selected a resource group, you will have the option to choose Create. After doing so, select your subscription, which should be Azure Subscription 1. The resource group name can be defined as you prefer, for example, I named mine CJ-SOC-LAB. Finally, choose the region where your resources will be deployed. For my setup, I selected North Europe. In this configuration, the resource group serves as a logical container, and the geographic location determines the region for the cloud SOC lab.
 
-Step 2: Create a Virtual Network
+<b><u>Step 2: Create a Virtual Network<u/><b/>
 
 The virtual network forms the core infrastructure of your SOC lab, enabling secure communication between Azure resources such as virtual machines and log collection tools. Setting it up is essential as it ensures these components can interact and share data, which is critical for monitoring and analysing security events.
 First head over to your Azure search bar, and type Virtual Network, you will then be prompted to create a virtual network. 
