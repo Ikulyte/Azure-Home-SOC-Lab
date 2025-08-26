@@ -35,4 +35,6 @@ My project involved deploying a single intentionally vulnerable virtual machine 
 
 
 ## Creating the Virtual Machine (Honeypot)
+<img width="512" height="400" alt="Image" src="https://github.com/user-attachments/assets/b047aa85-362e-46dc-8e6e-1467e4f7cf49" />
 
+In cybersecurity, a honeypot refers to a decoy system or network that is implemented to engage and observe attackers. Its purpose is to divert attention from actual systems and collect information about attack techniques and tools.
