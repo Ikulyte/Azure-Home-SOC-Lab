@@ -39,7 +39,7 @@ My project involved deploying a single intentionally vulnerable virtual machine 
 
 In cybersecurity, a honeypot refers to a decoy system or network that is implemented to engage and observe attackers. Its purpose is to divert attention from actual systems and collect information about attack techniques and tools.
 
-<b>Step 1: Create a resource group<b />
+Step 1: Create a resource group
 
 Begin by navigating to https://portal.azure.com/ . In the search bar, enter "Resource Group" to locate the relevant section.
 
