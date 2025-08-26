@@ -43,10 +43,18 @@ Step 1: Create a resource group
 
 Begin by navigating to https://portal.azure.com/ . In the search bar, enter "Resource Group" to locate the relevant section.
 
-
+<br />
 <img width="2468" height="411" alt="Image" src="https://github.com/user-attachments/assets/33c21b37-c36b-411a-ad6c-1bac82fd4141" />
 
 
-
+ <br />
+ <br />
  
 Once you have selected a resource group, you will have the option to choose Create. After doing so, select your subscription, which should be Azure Subscription 1. The resource group name can be defined as you prefer, for example, I named mine CJ-SOC-LAB. Finally, choose the region where your resources will be deployed. For my setup, I selected North Europe. In this configuration, the resource group serves as a logical container, and the geographic location determines the region for the cloud SOC lab.
+
+<br />
+Step 2: Create a Virtual Network
+
+The virtual network forms the core infrastructure of your SOC lab, enabling secure communication between Azure resources such as virtual machines and log collection tools. Setting it up is essential as it ensures these components can interact and share data, which is critical for monitoring and analysing security events.
+First head over to your Azure search bar, and type Virtual Network, you will then be prompted to create a virtual network. 
+
