@@ -60,16 +60,40 @@ First head over to your Azure search bar, and type Virtual Network, you will the
 
 <br />
 <img width="1369" height="305" alt="Image" src="https://github.com/user-attachments/assets/4170d01b-c8b4-4529-b5cf-b4bddca8ef15" />
+
+
  <br />
  <br />
 
 Once that’s done, you will need to enter the following details:
 
-<b />
+<br />
 <img width="1747" height="1297" alt="Image" src="https://github.com/user-attachments/assets/e424fadb-1901-450b-aa21-4a6740702f06" />
+
+
  <br />
  <br />
 
 -	Resource Group: Select the existing group that you created from your side, I created CJ-SOC-LAB.
 -	Region: Same region you selected previously, to keep you aligned with your resource group location, in this instance my region is North Europe.
--	Name of your VN: Keep simple, I named mine VNET-SOC-LAB
+-	Name of your VN: Keep it simple, I named mine VNET-SOC-LAB.
+
+## Step 3: Create a Virtual Machine
+
+In alignment with the previous steps, navigate to the Azure search bar and enter Virtual Machine. Once you arrive at the page, click on the create button, which will guide you through the process of setting up your Virtual Machine.
+
+<br />
+<img width="2260" height="799" alt="Image" src="https://github.com/user-attachments/assets/1025b393-754f-4465-b856-afc6bedabcd8" />
+
+<br />
+<br />
+
+Use the same Resource Group, Azure subscription 1, and Region as before. For the Virtual Machine name, choose a realistic corporate-sounding option to attract brute force attempts.
+
+<br />
+<img width="1694" height="1035" alt="Image" src="https://github.com/user-attachments/assets/9354d0e4-a8f1-4810-9c43-cb456e6b8169" />
+
+<br />
+<br />
+
+You will then be prompted to choose your base operating system for your VM, in which can be Windows 11 Pro, version 24H2 – x64 Gen2. As for the size this entirely depends on the amount of workload you want to run, the size that you choose will determines factors such as processing power, memory, and storage capacity. 
