@@ -214,19 +214,19 @@ Begin by uploading your data to the platform. To investigate failed login attemp
 
 VirusTotal is a platform that allows users to investigate whether an IP address is associated with malicious activity. Personally, I use it to trace the origin of suspicious IPs, examine the nature of their malicious behaviour, and, when necessary, report them accordingly.
 
-<b />
+<br />
 <img width="1114" height="582" alt="Image" src="https://github.com/user-attachments/assets/fc3f46c9-d77a-41cf-a498-9bbea711ff48" />
 
-<b >/
-<b >/
+<br >/
+<br >/
 
 In the last 24 hours, I was able to locate a few attackers attempting to login inside my VM.
 
-<b />
+<br />
 <img width="2010" height="1047" alt="Image" src="https://github.com/user-attachments/assets/7fcb6a25-39b3-47e0-b100-6db9e0209a5a" />
 
-<b />
-<b />
+<br />
+<br />
 
 ## Conclusion
 
