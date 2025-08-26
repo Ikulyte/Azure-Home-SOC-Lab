@@ -7,7 +7,7 @@ Proud to share my first project! I built a honeynet in Azure to simulate cyberat
 
 
 ## Objective
-My project involved deploying a single intentionally vulnerable virtual machine in Azure to observe real cyber attacks. This gave me practical experience with attacker techniques and improved my ability to respond quickly when security issues arose.
+My project involved deploying a single, intentionally vulnerable virtual machine in Azure to observe real cyber attacks. This gave me practical experience with attacker techniques and improved my ability to respond quickly to  security issues as they arose.
 
 ## Technologies, Regulations, and Azure Components used:
 
@@ -21,17 +21,17 @@ My project involved deploying a single intentionally vulnerable virtual machine 
 
 ## Components I used in my SOC Lab:
 
--	Begin by accessing Microsoft Azure and creating a free Azure subscription. This provides you with the essential cloud resources required for building and experimenting in your SOC Lab environment.
+-	I began by accessing Microsoft Azure and creating a free Azure subscription. This gave me the essential cloud resources I needed to build and experiment with my SOC Lab environment.
 
-- To attract malicious attackers, you will need to set up a Honey Pot with Azure Virtual Machine which will be a Windows 10/11 VM exposed to the internet, attracting attackers.
+- To attract malicious attackers, I set up a Honeypot using an Azure Virtual Machine. I configured a Windows 10/11 VM and exposed it to the internet so it would naturally attract attack attempts.
 
-- Once the Virtual Machine has been successfully created, verify its functionality by simulating failed login attempts, collecting security event logs, and analysing unauthorised logon attempts using Event Viewer.
+- Once the Virtual Machine was created, I verified its functionality by simulating failed login attempts. I then collected security event logs and analysed unauthorised login attempts using Event Viewer.
 
--	To conduct a comprehensive analysis of logon attempts, security logs should be forwarded to a Log Analytics Workspace, where KQL (Kusto Query Language) can be utilised for detailed examination.
+-	For a more comprehensive analysis of the login activity, I forwarded security logs to a Log Analytics Workspace. There, I used KQL (Kusto Query Language) to perform detailed examinations of the data.
 
--	To identify the sources of all attacks, geolocation can be integrated into Microsoft Sentinel to provide information about attackers' IP addresses.
+-	I integrated geolocation into Microsoft Sentinel to identify the sources of all attacks and gather information about the attackers’ IP addresses.
 
--	In order to provide insights to global threat sources, you would need to use Sentinel Workbook to visualise attackers’ activities on a map.
+-	To gain insights into global threat sources, I used a Sentinel Workbook to visualise attackers’ activities on a map.
 
 
 ## Creating the Virtual Machine (Honeypot)
@@ -75,7 +75,7 @@ Once that’s done, you will need to enter the following details:
  <br />
 
 -	Resource Group: Select the existing group that you created from your side, I created CJ-SOC-LAB.
--	Region: Same region you selected previously, to keep you aligned with your resource group location, in this instance my region is North Europe.
+-	Region: Use the same region you selected previously, to keep you aligned with your resource group location, in this instance my region is North Europe.
 -	Name of your VN: Keep it simple, I named mine VNET-SOC-LAB.
 
 ## Step 3: Create a Virtual Machine
@@ -96,7 +96,7 @@ Use the same Resource Group, Azure subscription 1, and Region as before. For the
 <br />
 <br />
 
-You will then be prompted to choose your base operating system for your VM, in which can be Windows 11 Pro, version 24H2 – x64 Gen2. As for the size this entirely depends on the amount of workload you want to run, the size that you choose will determines factors such as processing power, memory, and storage capacity. 
+You will then be prompted to choose your base operating system for your VM, in which can be Windows 11 Pro, version 24H2 – x64 Gen2. As for the size this entirely depends on the amount of workload you want to run, the size that you choose will determine factors such as processing power, memory, and storage capacity. 
 
 <br />
 <img width="1125" height="742" alt="Image" src="https://github.com/user-attachments/assets/37c406fe-479b-46ab-bc36-a2db026555f1" />
@@ -112,7 +112,7 @@ This field will be the administrator credential for your VM and your password. F
 <br />
 <br />
 
-Once you have completed all necessary configuration steps for your virtual machine, proceed by selecting next to review each tab. Retain the default settings unless you require specific adjustments for your virtual machine. After carefully reviewing all the tabs, click on review + create, to finalise your VM. If the validation passes, select the button create to deploy your virtual machine which will be ready to go.
+Once you have completed all necessary configuration steps for your virtual machine, proceed by selecting 'next' to review each tab. Retain the default settings unless you require specific adjustments for your virtual machine. After carefully reviewing all the tabs, click on 'review + create', to finalise your VM. If the validation passes, select the button create to deploy your virtual machine which will be ready to go.
 
 Your final result should look like this:
 
@@ -128,7 +128,7 @@ Once you have successfully deployed your virtual machine, you can logon to it by
 
 To access your Virtual Machine, go through your Azure Portal then select the VM you recently created. Inside your VM dashboard, you will notice there is a Public IP Address, copy that IP address. 
 
-Once that’s done, on your actual Windows PC, open Remote Desktop Connection (RDC) application.  Paste your Public IP Address you copied. It will then prompt you to add your Username and Password you configured during the creation of your Virtual Machine.
+Once that’s done, on your actual Windows PC, open Remote Desktop Connection (RDC) application.  Paste your Public IP Address you copied. It will then prompt you to add the Username and Password you configured during the creation of your Virtual Machine.
 
 <br />
 <img width="789" height="452" alt="Image" src="https://github.com/user-attachments/assets/cba913ea-c13c-4d1e-a7f8-33c314a1fd0f" />
