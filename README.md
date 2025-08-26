@@ -63,3 +63,13 @@ First head over to your Azure search bar, and type Virtual Network, you will the
  <br />
  <br />
 
+Once that’s done, you will need to enter the following details:
+
+<b />
+<img width="1747" height="1297" alt="Image" src="https://github.com/user-attachments/assets/e424fadb-1901-450b-aa21-4a6740702f06" />
+ <br />
+ <br />
+
+-	Resource Group: Select the existing group that you created from your side, I created CJ-SOC-LAB.
+-	Region: Same region you selected previously, to keep you aligned with your resource group location, in this instance my region is North Europe.
+-	Name of your VN: Keep simple, I named mine VNET-SOC-LAB
