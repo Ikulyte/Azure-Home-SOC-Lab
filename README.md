@@ -23,7 +23,7 @@ My project involved deploying a single intentionally vulnerable virtual machine 
 
 -	Begin by accessing Microsoft Azure and creating a free Azure subscription. This provides you with the essential cloud resources required for building and experimenting in your SOC Lab environment.
 
-- To attract malicious attackers, you will need to set up a Honey Pot with Azure Virtual Machine which will be a Windows 10 VM exposed to the internet, attracting attackers.
+- To attract malicious attackers, you will need to set up a Honey Pot with Azure Virtual Machine which will be a Windows 10/11 VM exposed to the internet, attracting attackers.
 
 - Once the Virtual Machine has been successfully created, verify its functionality by simulating failed login attempts, collecting security event logs, and analysing unauthorised logon attempts using Event Viewer.
 
@@ -32,3 +32,7 @@ My project involved deploying a single intentionally vulnerable virtual machine 
 -	To identify the sources of all attacks, geolocation can be integrated into Microsoft Sentinel to provide information about attackers' IP addresses.
 
 -	In order to provide insights to global threat sources, you would need to use Sentinel Workbook to visualise attackers’ activities on a map.
+
+
+## Creating the Virtual Machine (Honeypot)
+
