@@ -55,5 +55,10 @@ Once you have selected a resource group, you will have the option to choose Crea
 ## Step 2: Create a Virtual Network
 
 The virtual network forms the core infrastructure of your SOC lab, enabling secure communication between Azure resources such as virtual machines and log collection tools. Setting it up is essential as it ensures these components can interact and share data, which is critical for monitoring and analysing security events.
+
 First head over to your Azure search bar, and type Virtual Network, you will then be prompted to create a virtual network. 
+<br />
+<img width="1369" height="305" alt="Image" src="https://github.com/user-attachments/assets/4170d01b-c8b4-4529-b5cf-b4bddca8ef15" />
+ <br />
+ <br />
 
