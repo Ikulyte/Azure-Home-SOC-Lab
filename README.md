@@ -172,7 +172,7 @@ Next, you will want to see those logs inside Microsoft Sentinel, to do so, head 
 <br />
 <br />
 
-After installation, select Manage to proceed to the next page, then choose Windows Security Events via AMA. On the right side, you will find the option to "Open connector page to configure the data ingestion." You will then be prompted to create a new Data Collection Rule (DCR). Complete the three required fields: Rule Name (e.g., DCR-Windows), Subscription (such as Azure subscription 1), and Resource Group (your designated resource group). Once these fields are filled, the configuration will be complete.
+After installation, select 'Manage' to proceed to the next page, then choose Windows Security Events via AMA. On the right side, you will find the option to "Open connector page to configure the data ingestion." You will then be prompted to create a new Data Collection Rule (DCR). Complete the three required fields: Rule Name (e.g., DCR-Windows), Subscription (such as Azure subscription 1), and Resource Group (your designated resource group). Once these fields are filled, the configuration will be complete.
 
 ## Step 6: Use of KQL to view the failed login attempts
 
@@ -230,4 +230,4 @@ In the last 24 hours, I was able to locate a few attackers attempting to login i
 
 ## Conclusion
 
-To summarise, I deployed a lightweight yet efficient honeynet leveraging Microsoft Azure’s powerful cloud platform. Microsoft Sentinel was configured to generate alerts and incidents by analysing logs from the designated watch lists. Initial baseline metrics were collected in the unprotected environment prior to introducing any security measures. The next phase will involve implementing a range of security measures to strengthen the network and then collecting a second set of measurements for comparison.
+To summarise, I deployed a lightweight yet efficient honeynet - leveraging Microsoft Azure’s powerful cloud platform. Microsoft Sentinel was configured to generate alerts and incidents by analysing logs from the designated watch lists. Initial baseline metrics were collected in the unprotected environment prior to introducing any security measures. The next phase will involve implementing a range of security measures to strengthen the network and then collecting a second set of measurements for comparison.
