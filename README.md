@@ -3,4 +3,4 @@
 
 ## Introduction
 
-  Proud to share my first project! I built a honeynet in Azure to simulate cyberattacks and learn how attackers operate. Along the way, I gained practical knowledge in Azure security, incident response, and hardening environments
+Proud to share my first project! I built a honeynet in Azure to simulate cyberattacks and learn how attackers operate. Along the way, I gained practical knowledge in Azure security, incident response, and hardening environments.
