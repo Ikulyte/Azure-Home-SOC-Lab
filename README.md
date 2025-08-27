@@ -39,9 +39,12 @@ My project involved deploying a single, intentionally vulnerable virtual machine
 
 In cybersecurity, a honeypot refers to a decoy system or network that is implemented to engage and observe attackers. Its purpose is to divert attention from actual systems and collect information about attack techniques and tools.
 
-## Step 1: Create a resource group
+<details close>
+<summary> Step 1: Create a resource group </summary>
 
+<br />
 Begin by navigating to https://portal.azure.com/ . In the search bar, enter "Resource Group" to locate the relevant section.
+<br />
 
 <br />
 <img width="2468" height="411" alt="Image" src="https://github.com/user-attachments/assets/33c21b37-c36b-411a-ad6c-1bac82fd4141" />
@@ -52,11 +55,19 @@ Begin by navigating to https://portal.azure.com/ . In the search bar, enter "Res
  
 Once you have selected a resource group, you will have the option to choose Create. After doing so, select your subscription, which should be Azure Subscription 1. The resource group name can be defined as you prefer, for example, I named mine CJ-SOC-LAB. Finally, choose the region where your resources will be deployed. For my setup, I selected North Europe. In this configuration, the resource group serves as a logical container, and the geographic location determines the region for the cloud SOC lab.
 
-## Step 2: Create a Virtual Network
+</details>
+
+<details close>
+
+ <br />
+<summary>Step 2: Create a Virtual Network</summary>
 
 The virtual network forms the core infrastructure of your SOC lab, enabling secure communication between Azure resources such as virtual machines and log collection tools. Setting it up is essential as it ensures these components can interact and share data, which is critical for monitoring and analysing security events.
+<br />
+<br />
 
 First head over to your Azure search bar, and type Virtual Network, you will then be prompted to create a virtual network. 
+
 
 <br />
 <img width="1369" height="305" alt="Image" src="https://github.com/user-attachments/assets/4170d01b-c8b4-4529-b5cf-b4bddca8ef15" />
@@ -78,9 +89,16 @@ Once that’s done, you will need to enter the following details:
 -	Region: Use the same region you selected previously, to keep you aligned with your resource group location, in this instance my region is North Europe.
 -	Name of your VN: Keep it simple, I named mine VNET-SOC-LAB.
 
-## Step 3: Create a Virtual Machine
+</details>
 
+<details close>
+
+ <br />
+<summary> Step 3: Create a Virtual Machine</summary>
+ 
 In alignment with the previous steps, navigate to the Azure search bar and enter Virtual Machine. Once you arrive at the page, click on the create button, which will guide you through the process of setting up your Virtual Machine.
+<br />
+<br />
 
 <br />
 <img width="2260" height="799" alt="Image" src="https://github.com/user-attachments/assets/1025b393-754f-4465-b856-afc6bedabcd8" />
@@ -124,11 +142,17 @@ Your final result should look like this:
 
 Once you have successfully deployed your virtual machine, you can logon to it by using the Remote Desktop Connection (RDC) on your Windows PC.
 
-## Step 4: Access your Virtual Machine via RDC
+</details>
+
+<details close>
+
+ <br />
+<summary>Step 4: Access your Virtual Machine via RDC</summary>
 
 To access your Virtual Machine, go through your Azure Portal then select the VM you recently created. Inside your VM dashboard, you will notice there is a Public IP Address, copy that IP address. 
 
 Once that’s done, on your actual Windows PC, open Remote Desktop Connection (RDC) application.  Paste your Public IP Address you copied. It will then prompt you to add the Username and Password you configured during the creation of your Virtual Machine.
+<br />
 
 <br />
 <img width="789" height="452" alt="Image" src="https://github.com/user-attachments/assets/cba913ea-c13c-4d1e-a7f8-33c314a1fd0f" />
@@ -152,9 +176,15 @@ Once you have access to your Virtual Machine, locate the Firewall application wi
 <br />
 <br />
 
-## Step 5 : Security Events Testing
+</details>
+
+<details close>
+
+ <br />
+<summary>Step 5 : Security Events Testing</summary>
 
 To test your VM and security events, shut down your VM, then try logging in from the RDC (Remote Desktop Connection) with random usernames and passwords several times to generate failed attempts for review in Event Viewer.
+<br />
 
 <br />
 <img width="1101" height="202" alt="image" src="https://github.com/user-attachments/assets/1db78bea-f706-4c36-869a-fe2890e34983" />
@@ -174,9 +204,15 @@ Next, you will want to see those logs inside Microsoft Sentinel, to do so, head 
 
 After installation, select 'Manage' to proceed to the next page, then choose Windows Security Events via AMA. On the right side, you will find the option to "Open connector page to configure the data ingestion." You will then be prompted to create a new Data Collection Rule (DCR). Complete the three required fields: Rule Name (e.g., DCR-Windows), Subscription (such as Azure subscription 1), and Resource Group (your designated resource group). Once these fields are filled, the configuration will be complete.
 
-## Step 6: Use of KQL to view the failed login attempts
+</details>
+
+<details close>
+
+ <br />
+<summary>Step 6: Use of KQL to view the failed login attempts</summary>
 
 To use KQL (Kusto Query Language), go to Log Analytics Workspace and select Logs. You can run queries like SecurityEvents to efficiently analyse large volumes of security event data collected from Virtual Machines.
+<br />
 
 <br />
 <img width="2180" height="1308" alt="Image" src="https://github.com/user-attachments/assets/6dc1fda9-ba1a-4039-860e-4733a142d6f3" />
@@ -192,11 +228,17 @@ After conducting several tests of my KQL, I proceeded to analyse unsuccessful lo
 <br />
 <br />
 
-## Step 7: Use of GeoIP Watchlist
+</details>
+
+<details close>
+
+ <br />
+<summary>Step 7: Use of GeoIP Watchlist</summary>
 
 The final step is to assign geographic locations to the source IP addresses involved in the activity. This process involves creating a Watchlist in Microsoft Sentinel and uploading a CSV file containing geolocation data such as IPs, countries, cities, and coordinates.
 
 To create a Watchlist, navigate to Microsoft Sentinel, select Configuration, and locate the Watchlist option. Select New to initiate the creation of a watchlist, which can be named "geoip".
+<br />
 
 <br />
 <img width="2001" height="1314" alt="Image" src="https://github.com/user-attachments/assets/8a0c5eb0-76c9-465c-b9c5-5e7a743683f1" />
@@ -227,6 +269,8 @@ In the last 24 hours, I was able to locate a few attackers attempting to login i
 
 <br />
 <br />
+
+</details>
 
 ## Conclusion
 
